@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 :root
 {
     --bg-black-900:#f2f2fc; 
@@ -9,7 +10,8 @@
 body
 {
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Share Tech", sans-serif;
 }
 *
 {
@@ -23,9 +25,49 @@ body
 {
     box-sizing: border-box;
 }
+ul
+{
+    list-style: none;
+}
+.section
+{
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    padding: 30px;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+}
 /* aside */
 .aside
 {
     width: 270px;
     background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.aside .logo
+{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.aside .logo a
+{
+    color: var(--text-black-900);
+    font-weight: 700;
+    background: rgb(121, 24, 24);
+    padding: 15px 20px;
 }
