@@ -35,13 +35,16 @@ ul
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    position: fixed;
-    left: 270px;
-    top: 0;
     padding: 0 30px;
-    right: 0;
-    z-index: 0;
     opacity: 1;
+}
+.hidden
+{
+    display: none !important;
+}
+.main-content
+{
+   padding-left: 250px; 
 }
 .padd-15
 {
@@ -53,22 +56,72 @@ ul
     max-width: 1100px;
     width: 100%;
     margin: auto;
-    margin-top: 12%;
-    margin-left: 2%
+    margin-left: 10%;
+}
+.section .container
+{
+    padding-top: 20%;
+    padding-left: 5%;
+}
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 300px;
+}
+.section-title h2
+{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2::before
+{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2::after
+{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
 }
 .row
 {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
+    margin-left: -150px;
     margin-right: -15px;
     position: relative;
+    margin-top: -23%;
 }
 .btn
 {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+}
+.btn:hover
+{
+    transform: scale(1.05);
 }
 /* aside */
 .aside
@@ -102,7 +155,7 @@ ul
 .aside .logo a span
 {
     font-family: "Share Tech", sans-serif;
-    font-family: 40px;
+    font-size: 40px;
 }
 .aside .logo a::before
 {
@@ -243,7 +296,42 @@ h3.my-profession
     font-size: 20px;
     color: var(--text-black-700)
 }
+.home-img::after
+{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: -20px;
+    bottom: -30px;
+}
+.home-img::before
+{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: -20px;
+    top: -40px;
+}
 .home .home-img img
 {
+    margin: auto;
+    border-radius: 5px;
     height: 400px;
+}
+.content_header
+{
+    margin-top: 0px;
+}
+/* About */
+.about .about-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-color: red;
 }
