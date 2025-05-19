@@ -30,6 +30,14 @@ ul
 {
     list-style: none;
 }
+.main-container 
+{
+    display: flex;
+}
+.sidebar
+{
+    flex: 0 0 250px;
+}
 .section
 {
     background: var(--bg-black-900);
@@ -44,6 +52,7 @@ ul
 }
 .main-content
 {
+    flex: 1;
    padding-left: 250px; 
 }
 .padd-15
@@ -56,18 +65,17 @@ ul
     max-width: 1100px;
     width: 100%;
     margin: auto;
-    margin-left: 10%;
 }
 .section .container
 {
-    padding-top: 20%;
-    padding-left: 5%;
+    padding-top: 0;
+    padding-left: 0;
 }
 .section-title
 {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 300px;
+    margin-bottom: 50px;
 }
 .section-title h2
 {
@@ -101,10 +109,9 @@ ul
 {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -150px;
+    margin-left: -15px;
     margin-right: -15px;
-    position: relative;
-    margin-top: -23%;
+    margin-top: 0;
 }
 .btn
 {
@@ -133,7 +140,7 @@ ul
     top: 0;
     padding: 30px;
     height: 100%;
-    border-right: 5px solid var(--bg-black-50);
+    border-right: 3px solid var(--bg-black-50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,14 +331,117 @@ h3.my-profession
     border-radius: 5px;
     height: 400px;
 }
-.content_header
-{
-    margin-top: 0px;
-}
 /* About */
+.about .container {
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  padding-left: 4rem;
+  max-width: 1200px;
+}
+.about-text
+{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.about-text h3
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+}
+.about-text h3 span
+{
+    color: var(--skin-color)
+}
+.about-text p
+{
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
 .about .about-content
 {
     flex: 0 0 100%;
     max-width: 100%;
-    background-color: red;
+}
+.about-content .personal-info
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+.about-content .personal-info .info-item
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about-content .personal-info .info-item p
+{
+    font-weight: 600;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about-content .personal-info .info-item p span
+{
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about-content .personal-info .buttons
+{
+    margin-top: 40px;
+}
+.about-content .personal-info .buttons .btn
+{
+    margin-right: 15px;
+}
+.about-content .skills
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+.about-content .skills .skill-item
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.about-content .skills .skill-item h5
+{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.about-content .skills .skill-item .progress
+{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about-content .skills .skill-item .progress .progress-in
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+.about-content .skills .skill-item .skill-percent
+{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
 }
