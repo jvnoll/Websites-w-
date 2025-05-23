@@ -535,3 +535,20 @@ h3.my-profession
     text-align: justify;
     color: var(--text-black-700);
 }
+/* skills */
+.skills .container
+{
+    padding-top: 60px;
+}
+/* targeting only the skill‐cards in the Skills section */
+.skills  .row  .skill-item {
+  /* flexing children: always take up 33.333% */
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+.skills .skill-item
+{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
